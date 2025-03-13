@@ -1,4 +1,4 @@
-# 📌 Bootstrap 5 Assignment – MSc in Software Engineering  
+# 📌 HTML/ CSS/ Bootstrap 5 Assignment – MSc in Software Engineering  
 
 ## 🎓 Institution: GMC School of Technology & Woolf University  
 **Program:** MSc in Computer Science (Specialization: Software Engineering)  

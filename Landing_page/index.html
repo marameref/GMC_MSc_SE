@@ -1,170 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Marameref Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: url('pictures/web2.jpg') no-repeat center center/cover;
-            color: white;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
+      /* General styling for the body */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      
+      /* Hero section styling */
+      .hero {
+        background: url("pictures/web2.jpg") no-repeat center center/cover;
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      
+      /* Responsive design for small screens */
+      @media (max-width: 768px) {
         .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
+          font-size: 2rem;
         }
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-        .footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .card img, .portfolio img, video {
-            width: 100%;
-            border-radius: 10px;
-        }
+      }
+      
+      /* Footer styling */
+      .footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      
+      /* Styling for images and videos */
+      .card img,
+      .portfolio img,
+      video {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      /* Navbar styling */
+      .navbar-nav .nav-link {
+        font-size: 1rem;
+      }
+      
+      @media (max-width: 576px) {
         .navbar-nav .nav-link {
-            font-size: 1rem;
+          text-align: center;
+          padding: 10px;
         }
-        @media (max-width: 576px) {
-            .navbar-nav .nav-link {
-                text-align: center;
-                padding: 10px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <!-- Navbar -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Marameref</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#home">Marameref</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div>
-            <h1>Welcome to Marameref Portfolio</h1>
-            <p class="lead">Showcasing creativity, innovation, and expertise.</p>
-            <a href="#contact" class="btn btn-light mt-3">Get in Touch</a>
-        </div>
+      <div>
+        <h1>Welcome to Marameref Portfolio</h1>
+        <p class="lead">Showcasing creativity, innovation, and expertise.</p>
+        <a href="#contact" class="btn btn-light mt-3">Get in Touch</a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-5 text-center">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate web developer with experience in creating dynamic websites, MLOps, and technical writing.</p>
-        </div>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate web developer with experience in creating dynamic
+          websites, MLOps, and technical writing.
+        </p>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">Services</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h5 class="card-title">Business Consulting</h5>
-                        <p class="card-text">Professional consulting to elevate your business strategy.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Building robust websites and web applications.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-3">
-                        <h5 class="card-title">Marketing Strategy</h5>
-                        <p class="card-text">Crafting effective digital marketing strategies.</p>
-                    </div>
-                </div>
+      <div class="container text-center">
+        <h2 class="mb-4">Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="card-title">Business Consulting</h5>
+              <p class="card-text">
+                Professional consulting to elevate your business strategy.
+              </p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Building robust websites and web applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5 class="card-title">Marketing Strategy</h5>
+              <p class="card-text">
+                Crafting effective digital marketing strategies.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Portfolio</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <img src="pictures/mlops.png" class="img-fluid" alt="Project 1">
-                    <p>Project 1 - MLOps Implementation</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="pictures/soft-tech.jpg" class="img-fluid">
-                    <p>Technical Documentation Services</p>
-                </div>
-                <div class="col-md-4">
-                    <video controls>
-                        <source src="videos/demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Portfolio Video Demo</p>
-                </div>
-            </div>
+      <div class="container text-center">
+        <h2 class="mb-4">Portfolio</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="pictures/MLOps2.png" class="img-fluid" alt="Project 1" />
+            <p>Project 1 - MLOps Implementation</p>
+          </div>
+          <div class="col-md-4">
+            <img src="pictures/soft-tech.jpg" class="img-fluid" />
+            <p>Technical Documentation Services</p>
+          </div>
+          <div class="col-md-4">
+            <video controls>
+              <source src="videos/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p>Portfolio Video Demo</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Form -->
     <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Marameref. All Rights Reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Marameref. All Rights Reserved.</p>
+      </div>
     </footer>
 
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

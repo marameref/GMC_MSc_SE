@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docplanner Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+    }
+
+    header img {
+      height: 25px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #00b39b;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 10%;
+      color: #00b39b;
+    }
+
+    .description {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 20px 10%;
+      color: #747474;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 10%;
+    }
+
+    .card {
+      flex: 1;
+      padding: 20px;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .card.patients {
+      background-color: #00ccb1;
+    }
+
+    .card.doctors {
+      background-color: #3d83df;
+    }
+
+    .card.clinics {
+      background-color: #1b2734;
+    }
+
+    .card a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .global {
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    .platform {
+      background-color: #d0faf4;
+      text-align: center;
+      padding: 60px 10%;
+    }
+
+    .platform .platform-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .platform .platform-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 220px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      background-color: #e5faf8;
+      padding: 60px 10%;
+    }
+
+    .stats .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 200px;
+      max-width: 220px;
+      text-align: center;
+    }
+
+    .cities {
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .city {
+      position: relative;
+    }
+
+    .city img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .city button {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: #3d83df;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    .cta button {
+      padding: 10px 20px;
+      background-color: #3d83df;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://www.docplanner.com/img/logo-default-group-en.svg?v=1" alt="Docplanner Group">
+    <nav>
+      <a href="#">About us</a>
+      <a href="#">Career</a>
+      <a href="#">Departments</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Making the healthcare experience more human</h1>
+  </section>
+
+  <section class="description">
+    <p>We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that’s why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+    <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card patients">
+      <h2>For patients</h2>
+      <p>Find a doctor, book a visit and solve any health-related doubt</p>
+      <a href="#">Choose country</a>
+    </div>
+    <div class="card doctors">
+      <h2>For doctors</h2>
+      <p>Save time managing visits and cut no-shows by half</p>
+      <a href="#">Choose country</a>
+    </div>
+    <div class="card clinics">
+      <h2>For clinics</h2>
+      <p>Deliver an exceptional patient experience in your clinic</p>
+      <a href="#">2 to 20 specialists</a><br>
+      <a href="#">More than 20 specialists</a>
+    </div>
+  </section>
+
+  <section class="global">
+    <p>We are a global company with local culture</p>
+  </section>
+
+  <section class="platform">
+    <h2>The world’s biggest healthcare platform</h2>
+    <p>We work from 9 offices all over the world, bringing Docplanner Group to life in 13 countries.</p>
+    <div class="platform-boxes">
+      <div class="platform-box">
+        <h3>Leader in 13 countries</h3>
+        <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+      </div>
+      <div class="platform-box">
+        <h3>15,000,000 appointments</h3>
+        <p>booked last month</p>
+      </div>
+      <div class="platform-box">
+        <h3>90,000,000 patients</h3>
+        <p>visit our websites each month</p>
+      </div>
+      <div class="platform-box">
+        <h3>210,000 active doctors</h3>
+        <p>trust our solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cities">
+    <h2>Improve the lives of millions. Change yours forever.</h2>
+    <p>More than 2800 team mates share our same vision, goals and passion. With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna, Mexico City and Curitiba, our search for great talent never stops.</p>
+    <div class="city-grid">
+      <div class="city">
+        <img src="./pictures/warsaw.png" alt="Warsaw">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/barcelona.png" alt="Barcelona">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/munich.png" alt="Munich">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures//istanbul.png" alt="Istanbul">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/rome.png" alt="Rome">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/bologna.png" alt="Bologna">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/curitiba.png" alt="Curitiba">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/rio.png" alt="Rio de Janeiro">
+        <button>See openings</button>
+      </div>
+      <div class="city">
+        <img src="./pictures/mexico.png" alt="Mexico City">
+        <button>See openings</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Sounds interesting? Join us now!</h2>
+    <button>SEE ALL CURRENT OPENINGS</button>
+  </section>
+
+  <footer>
+    <p>We are leaders in 13 countries: Poland, Turkey, Spain, Italy, Germany, Czech Republic, Portugal, Mexico, Colombia, Brazil, Argentina, Peru and Chile</p>
+    <p>&copy; www.docplanner.com 2023</p>
+  </footer>
+</body>
+
+</html>

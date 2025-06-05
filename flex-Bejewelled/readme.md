@@ -1,6 +1,5 @@
 
-````markdown
-# 💎 Be-Jewelled - Responsive Jewelry Store Landing Page
+# Be-Jewelled💎 - Responsive Jewelry Store Landing Page
 
 **Be-Jewelled** is a sleek and elegant responsive landing page for an online jewelry store. It showcases a curated collection of dazzling jewelry pieces, each displayed in a beautifully styled product card. Designed with Bootstrap 5, the project emphasizes clean design, mobile responsiveness, and a seamless shopping experience.
 
@@ -8,8 +7,8 @@
 
 ## 📸 Preview
 
-![Desktop View](./screenshots/desktop_view.png)  
-![Mobile View](./screenshots/mobile_view.png)
+* [Desktop View](./screenshots/desktop_view.png)  
+* [Mobile View](./screenshots/mobile_view.png)
 
 ---
 

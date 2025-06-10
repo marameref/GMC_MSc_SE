@@ -1,0 +1,65 @@
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-white shadow-md">
+    <h1 class="text-2xl font-bold text-indigo-600">John Doe</h1>
+    <nav>
+      <ul class="flex gap-6 text-gray-700">
+        <li><a href="#home" class="hover:text-indigo-500">Home</a></li>
+        <li><a href="#projects" class="hover:text-indigo-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-[80vh] text-white flex flex-col justify-center items-center" style="background-image: url('https://source.unsplash.com/featured/?fitness');">
+    <h2 class="text-5xl font-bold mb-4">Hi, I'm John Doe</h2>
+    <p class="text-xl max-w-md text-center">A Web Developer passionate about building beautiful and functional websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="p-10 bg-white">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Skills</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-6 rounded shadow">HTML & CSS</div>
+      <div class="bg-gray-100 p-6 rounded shadow">JavaScript</div>
+      <div class="bg-gray-100 p-6 rounded shadow">Tailwind CSS</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-10 bg-gray-100">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <img src="https://source.unsplash.com/featured/?code" class="rounded mb-4" />
+        <h4 class="font-bold text-xl mb-2">Portfolio Site</h4>
+        <p>Responsive personal portfolio using Tailwind CSS.</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="p-10 bg-white">
+    <h3 class="text-3xl font-semibold mb-6 text-center">Contact Me</h3>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded" />
+      <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded" />
+      <textarea placeholder="Your message" rows="5" class="w-full p-3 border border-gray-300 rounded"></textarea>
+      <button class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+    <div class="flex justify-center space-x-4 mb-4">
+      <a href="#" class="hover:text-indigo-300">Twitter</a>
+      <a href="#" class="hover:text-indigo-300">LinkedIn</a>
+      <a href="#" class="hover:text-indigo-300">GitHub</a>
+    </div>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
+
+</body>

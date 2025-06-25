@@ -23,7 +23,7 @@ It allows users to manage products, adjust quantities, like items, and dynamical
 
 ## 📸 Preview
 
-![screenshot](assets/screenshot.png)  
+![screenshot](./assets/screenshot.png)  
 *Adjust product quantities, delete items, and like your favorites!*
 
 ---
